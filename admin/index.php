@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -77,6 +76,19 @@
                     <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item active">Dashboard</li>
                     </ol>
+                    <?php
+        if(isset($_SESSION['eksekusi'])):
+        ?>
+        <div class="alert alert-success d-flex align-items-center" role="alert">
+        <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+        <div>
+        Data berhasil Ditambahkan
+        </div>
+        </div>
+        <?php
+        session_destroy();
+        endif;
+        ?>
                     <div class="row">
 
                         <?php
@@ -163,7 +175,7 @@
                             <div class="card mb-4">
                                 <div class="card-header">
                                     <i class="fas fa-chart-area me-1"></i>
-                                    Area Chart Example
+                                    Area Chart 
                                 </div>
                                 <div class="card-body"><canvas id="myBar2Chart" width="100%" height="40"></canvas></div>
                             </div>
@@ -172,7 +184,7 @@
                             <div class="card mb-4">
                                 <div class="card-header">
                                     <i class="fas fa-chart-bar me-1"></i>
-                                    Bar Chart Example
+                                    Bar Chart 
                                 </div>
                                 <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
 
@@ -182,7 +194,7 @@
                     <div class="card mb-4">
                         <div class="card-header">
                             <i class="fas fa-table me-1"></i>
-                            DataTable Example
+                            DataTable 
                         </div>
                         <div class="card-body">
                             <table id="datatablesSimple">
@@ -289,7 +301,7 @@
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Arka 2023</div>
+                        <div class="text-muted">Copyright &copy; Name </div>
                         <div>
                             <a href="#">Privacy Policy</a>
                             &middot;

@@ -145,11 +145,11 @@
                                                     <img src="foto_operator/<?php echo $d['foto'] ?>" width="35" height="40">
                                                 </td>
                                                 <td>
+                                                    <a href="edit_operator.php?id_operator=<?php echo $d['id_operator']; ?>" name="id_operator"
+                                                        class="btn btn-outline-success" style="width: 77px;">EDIT</a>
                                                     <a href="hapus_operator.php?id_operator=<?php echo $d['id_operator']; ?>"
                                                         class="btn btn-outline-danger">HAPUS</a>
-                                                        <a href="edit_operator.php?id_operator=<?php echo $d['id_operator']; ?>" name="id_operator"
-                                                        class="btn btn-outline-success" style="width: 77px;">EDIT</a>
-                                                </td>
+                                                </td>                                               
                                             </tr>
                                             <?php
                                         }
@@ -162,7 +162,7 @@
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy;Arkha 2023</div>
+                            <div class="text-muted">Copyright &copy;Name</div>
                         </div>
                     </div>
                 </footer>

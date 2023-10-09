@@ -1,6 +1,21 @@
 <?php
 // koneksi database
 include 'koneksi.php';
+	// session_start();
+
+	// if(isset($_POST['id_buku', 'judul', 'penulis', 'penerbit', 'tahun_terbut', 'genre', 'sinopsis', 'no_isbn'])){
+	// 	if(_$POST['id_buku', 'judul', 'penulis', 'penerbit', 'tahun_terbut', 'genre', 'sinopsis', 'no_isbn'] == "add"){
+			
+	// 		$berhasil = tambah_data($_POST. $_FILES);
+
+	// 		if($berhasil){
+	// 			$_SESSION['eksekusi'] = "Data Berhasil Ditambahkan";
+	// 			header("location: index.php");
+	// 		} else {
+	// 			echo $berhasil;
+	// 		}
+	// 	}
+	// }
 
 // menangkap data yang di kirim dari form
 $id = $_POST['id_buku'];

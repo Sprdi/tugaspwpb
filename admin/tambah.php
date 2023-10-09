@@ -1,135 +1,8 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-	<title>CRUD PHP dan MySQLi - WWW.MALASNGODING.COM</title>
-</head>
-<body>
-	
-	<br/>
-	<a href="index.php">KEMBALI</a>
-	<br/>
-	<br/>
-	<h3>TAMBAH DATA MAHASISWA</h3>
-	<form method="post" action="tambah_aksi.php" enctype="multipart/form-data">
-	<table>
-				<tr>
-					<td>Judul Buku</td>
-					<td>
-						<input type="hidden" name="id">
-						<input type="text" name="judul">
-					</td>
-				</tr>
-				<tr>
-					<td>Penulis</td>
-					<td><input type="text" name="penulis"></td>
-				</tr>
-				<tr>
-					<td>penerbit</td>
-					<td><input type="text" name="penerbit"></td>
-				</tr>
-				<tr>
-					<td>Tahun terbit</td>
-					<td><input type="date" name="tahun_terbit"></td>
-				</tr>
-				<tr>
-					<td>Genre</td>
-					<td><input type="text" name="genre"></td>
-				</tr>
-				<tr>
-					<td>Sinopsis</td>
-					<td><input type="text" name="sinopsis"></td>
-				</tr>
-				<tr>
-					<td>No ISBN</td>
-					<td><input type="text" name="no_isbn"></td>
-				</tr>
-					<label>Foto :</label>
-					<input type="file" name="foto" required="required">
-					<p style="color: red">Ekstensi yang diperbolehkan .png | .jpg | .jpeg | .gif</p>
-				<tr>
-					<td></td>
-					<td><input type="submit" value="SIMPAN"></td>
-				</tr>
-			</table>
-	</form>
-</body>
-</html> -->
+<?php
+    include "koneksi.php";
+    session_start();
 
-
-<!-- <html>
-
-<head>
-	<title>CRUD PHP dan MySQLi - WWW.MALASNGODING.COM</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-	<link href="../css/styles.css" rel="stylesheet" />
-	<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-</head>
-
-<body class="bg-primary">
-
-	<div id="layoutAuthentication">
-		<div id="layoutAuthentication_content">
-			<main>
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-5">
-							<div class="card shadow-lg border-0 rounded-lg mt-5">
-								<div class="card-header">
-									<h3 class="text-center font-weight-light my-4">Tambah Admin</h3>
-								</div>
-
-								
-								<form method="post" action="admin_aksi.php" enctype="multipart/form-data">
-
-									<div class="form-floating mb-3 ">
-									<input type="hidden" name="id_admin">
-										<input class="form-control" id="nama" type="text" placeholder="Nama"
-											name="nama" />
-										<label for="nama">Nama</label>
-									</div>
-
-
-
-									<div class="form-floating mb-3">
-										<input type="text" name="username" class="form-control">
-										<label for="username">Username</label>
-									</div>
-
-
-
-									<tr>
-										<td>Password</td>
-										<td><input type="text" name="password"></td>
-									</tr>
-									<tr>
-										<label>Foto :</label>
-										<input type="file" name="foto" required="required">
-										<p style="color: red">Ekstensi yang diperbolehkan .png | .jpg | .jpeg | .gif
-										</p>
-									</tr>
-									<tr>
-										<td></td>
-										<td><input type="submit" value="SIMPAN"></td>
-									</tr>
-									</table>
-								</form>
-								<script
-									src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-									crossorigin="anonymous"></script>
-							</div>
-						</div>
-					</div>
-				</div>
-		</div>
-	</div>
-
-
-
-</body>
-
-</html> -->
-
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -389,7 +262,7 @@
 			<footer class="py-4 bg-light mt-5">
 				<div class="container-fluid px-4">
 					<div class="d-flex align-items-center justify-content-between small">
-						<div class="text-muted">Copyright &copy; Arka 2023</div>
+						<div class="text-muted">Copyright &copy; Name </div>
 					</div>
 				</div>
 			</footer>
