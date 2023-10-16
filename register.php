@@ -160,7 +160,7 @@ if (isset($_POST['register'])) {
                                         <div class="form-floating mb-3">
                                             <input class="form-control" id="jenis_kelamin" type="text"
                                                 placeholder="jenis_kelamin" name="jenis_kelamin" />
-                                            <label for="jenis_kelamin">Jenis_kelamin</label>
+                                            <label for="jenis_kelamin">Jenis Kelamin</label>
                                         </div>
                                         <div class="form-floating mb-3">
                                             <input class="form-control" id="inputEmail" type="text"
@@ -253,7 +253,7 @@ if (isset($_POST['register'])) {
             <footer class="py-4 bg-light mt-5">
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Name </div>
+                        <div class="text-muted">Copyright &copy; Your Website 2023 </div>
                     </div>
                 </div>
             </footer>
