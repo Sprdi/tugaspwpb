@@ -1,3 +1,12 @@
+<?php
+session_start();
+if ($_SESSION["status_operator"]!="login"){
+    header("location:../login.php");
+    exit;
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 

@@ -3,6 +3,7 @@
 
 // menghubungkan php dengan koneksi database
 include 'koneksi.php';
+session_start();
 
 if (isset($_POST['login'])) {
 	$username = $_POST["username"];
@@ -29,7 +30,6 @@ if (isset($_POST['login'])) {
 
 
 // mengaktifkan session php
-session_start();
 
 $login = mysqli_query($koneksi, "select * from data_operator where username='$username' and password='$password'");
 // menghitung jumlah data yang ditemukan
@@ -44,6 +44,7 @@ if ($cek > 0) {
 	if ($data['username'] == "$username" && $data['password'] == "$password") {
 		// buat session login dan username
 		$_SESSION['username'] = $username;
+		$_SESSION["status_operator"] = "login";
 		// alihkan ke halaman dashboard pengurus
 		header("location:operator/index.php");
 
@@ -59,6 +60,7 @@ $admin = mysqli_query($koneksi, "select * from data_admin where username='$usern
 $data_op = mysqli_fetch_assoc($admin);
 if ($data_op['username'] == "$username" && $data_op['password'] == "$password") {
 	$_SESSION['username'] = $username;
+	$_SESSION["status_admin"] = "login";
 
 	header("location:admin/index.php");
 }
